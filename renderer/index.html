@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciador de Conexões</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="tela-home" class="tela">
+    <h1>Conexões</h1>
+    <button onclick="novaConexao()">Nova Conexão</button>
+    <div id="db-list"></div>
+  </div>
+
+  <div id="tela-nova" class="tela" style="display: none;">
+    <h2 id="form-title">Nova Conexão</h2>
+    <form id="db-form">
+      <input type="text" name="name" placeholder="Nome" required />
+      <input type="text" name="instanceId" placeholder="EC2 Instance ID" required />
+      <input type="text" name="host" placeholder="Host do RDS" required />
+      <input type="number" name="port" placeholder="Porta" required />
+      <input type="text" name="profile" placeholder="AWS Profile" required />
+      <button type="submit">Salvar</button>
+    </form>
+    <button onclick="abrirTela('home')">Voltar</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
