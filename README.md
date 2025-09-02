@@ -1,5 +1,6 @@
-# Chatbot Personalizado com AWS Bedrock
-Utilizando AWS Bedrock para Construção de Chat com IA Generativa com Conteúdos Incorporados
+# Gerenciador de Conexões RDS com AWS Session Manager (Electron)
+
+Aplicativo desktop em Electron que automatiza a abertura de conexões entre uma instância EC2 em subnet privada e um RDS, utilizando o AWS Session Manager.  
 
 ### 📋 Pré-requisitos
 
